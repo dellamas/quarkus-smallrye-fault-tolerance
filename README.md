@@ -1,6 +1,6 @@
-# Lab SmallRye Fault Tolerance
+# SmallRye Fault Tolerance para cobranças Pix
 
-Esse lab nasceu de uma dor bem comum em fintech: cobrança Pix que depende de provedor externo e começa a falhar no pior momento. Em vez de deixar a API devolver erro de qualquer jeito quando a autorização oscila, a ideia aqui foi montar um fluxo pequeno, testável e com comportamento previsível.
+Esse projeto nasceu de uma dor bem comum em fintech: cobrança Pix que depende de provedor externo e começa a falhar no pior momento. Em vez de deixar a API devolver erro de qualquer jeito quando a autorização oscila, a ideia aqui foi montar um fluxo pequeno, testável e com comportamento previsível.
 
 ## O que é
 
@@ -74,7 +74,7 @@ curl -X POST http://localhost:8080/pix-charges \
   }'
 ```
 
-Esse projeto faz parte da série de labs em que cada extensão tenta resolver um problema de verdade, sem firula e sem exemplo genérico montado só para caber no slide.
+Esse projeto faz parte de uma sequência prática em que cada extensão tenta resolver um problema de verdade, sem firula e sem exemplo genérico montado só para caber no slide.
 
 Gostou e quer ver mais conteúdos como este? Então deixa uma ⭐ no repositório.
 

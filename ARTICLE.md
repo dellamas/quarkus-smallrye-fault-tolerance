@@ -6,7 +6,7 @@ Eu tenho usado essa série para pegar uma extensão do Quarkus por vez e forçar
 
 A aplicação simula um gateway Pix de fintech recebendo pedidos de cobrança e chamando um provedor externo de autorização. Quando esse provedor fica instável, a API não pode simplesmente responder erro para tudo e deixar o time operacional apagar incêndio no braço.
 
-Para esse lab, o fluxo ficou assim:
+Aqui o fluxo ficou assim:
 
 - cobrança comum tenta novamente e segue o jogo
 - cobrança mais alta não insiste para sempre
@@ -139,11 +139,11 @@ Swagger:
 
 - `http://localhost:8080/q/swagger-ui`
 
-## O que eu tirei desse lab
+## O que eu tirei desse projeto
 
 Essa extensão ganha muito quando o exemplo deixa de ser acadêmico. No caso da cobrança Pix, retry e fallback não são enfeite: eles viram uma decisão de operação. Cobrança pequena pode insistir um pouco. Cobrança maior precisa preservar o sistema e cair para outro fluxo.
 
-Também ficou claro que esse tipo de lab funciona melhor quando o código é curto, o cenário é específico e o teste cobre a resposta final. A leitura fica muito mais honesta.
+O ponto que mais valeu aqui foi deixar a política de falha explícita no serviço, em vez de espalhar tratamento defensivo por vários lugares da aplicação.
 
 ## Link pro GitHub
 
