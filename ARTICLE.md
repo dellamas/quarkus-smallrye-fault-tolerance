@@ -151,9 +151,12 @@ Aplicação pública:
 
 <https://github.com/dellamas/quarkus-smallrye-fault-tolerance>
 
-Se esse projeto te ajudou, deixa uma ⭐ no repositório!
+Gostou e quer ver mais conteúdos como este? Então deixa uma ⭐ no repositório.
 
-Me acompanha nas redes:
+No LinkedIn eu sempre posto sobre eventos, comunidade Java e Quarkus:
 
 [💼 LinkedIn](https://www.linkedin.com/in/luisfabriciodellamas/)
+
+E o artigo deste projeto está no dev.to:
+
 [✍️ dev.to](https://dev.to/dellamas)

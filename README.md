@@ -76,11 +76,12 @@ curl -X POST http://localhost:8080/pix-charges \
 
 Esse projeto faz parte da série de labs em que cada extensão tenta resolver um problema de verdade, sem firula e sem exemplo genérico montado só para caber no slide.
 
-Se esse projeto te ajudou, deixa uma ⭐ no repositório!
+Gostou e quer ver mais conteúdos como este? Então deixa uma ⭐ no repositório.
 
-Me acompanha nas redes:
+No LinkedIn eu sempre posto sobre eventos, comunidade Java e Quarkus:
 
 [💼 LinkedIn](https://www.linkedin.com/in/luisfabriciodellamas/)
-[✍️ dev.to](https://dev.to/dellamas)
 
-Feito com café e Quarkus.
+E o artigo deste projeto está no dev.to:
+
+[✍️ dev.to](https://dev.to/dellamas)
