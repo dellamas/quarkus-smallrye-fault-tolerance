@@ -85,3 +85,5 @@ No LinkedIn eu sempre posto sobre eventos, comunidade Java e Quarkus:
 E o artigo deste projeto está no dev.to:
 
 [✍️ dev.to](https://dev.to/dellamas)
+
+A versão em markdown que eu usei como base também ficou separada no repositório da série.
