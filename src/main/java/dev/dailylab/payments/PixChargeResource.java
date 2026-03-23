@@ -1,5 +1,6 @@
 package dev.dailylab.payments;
 
+import jakarta.validation.Valid;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
@@ -22,7 +23,7 @@ public class PixChargeResource {
 
     @POST
     @Operation(summary = "Processes a pix charge with retry, timeout, circuit breaker and fallback")
-    public PixChargeResult create(PixChargeRequest request) {
+    public PixChargeResult create(@Valid PixChargeRequest request) {
         return service.process(request);
     }
 }

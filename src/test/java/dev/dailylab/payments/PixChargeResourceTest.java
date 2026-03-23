@@ -60,4 +60,22 @@ class PixChargeResourceTest {
                 .body("provider", equalTo("fallback-workflow"))
                 .body("correlationId", equalTo("pix-002"));
     }
+    @Test
+    void shouldRejectInvalidChargePayload() {
+        String payload = """
+                {
+                  "customerId": "cust-03",
+                  "amount": 0,
+                  "correlationId": "pix-003"
+                }
+                """;
+
+        given()
+                .contentType("application/json")
+                .body(payload)
+                .when().post("/pix-charges")
+                .then()
+                .statusCode(400);
+    }
+
 }
