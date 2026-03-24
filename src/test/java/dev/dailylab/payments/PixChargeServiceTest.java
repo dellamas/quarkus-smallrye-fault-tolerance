@@ -18,4 +18,16 @@ class PixChargeServiceTest {
 
         assertEquals("correlationId must not be blank", exception.getMessage());
     }
+
+    @Test
+    void shouldRejectZeroAmountBeforeCallingGateway() {
+        PixGatewayClient gatewayClient = new PixGatewayClient();
+        PixChargeService service = new PixChargeService(gatewayClient);
+
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class,
+                () -> service.process(new PixChargeRequest("cust-01", BigDecimal.ZERO, "corr-01")));
+
+        assertEquals("amount must be greater than zero", exception.getMessage());
+    }
+
 }

@@ -65,5 +65,8 @@ public class PixChargeService {
         if (request.amount() == null) {
             throw new IllegalArgumentException("amount must not be null");
         }
+        if (request.amount().signum() <= 0) {
+            throw new IllegalArgumentException("amount must be greater than zero");
+        }
     }
 }
